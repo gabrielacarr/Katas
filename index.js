@@ -55,3 +55,16 @@ function positiveSum(arr){
           .reduce((a,b) => a + b, 0);
     }
     
+// // reduce example
+// const array1 = [1, 2, 3, 4];
+// const total = array1.reduce((sum, currentValue) => {
+//   console.log(`sum: ${sum} currentValue: ${currentValue}`)
+//   return sum + currentValue;
+//   }, 0)
+// console.log(total);
+
+// solution 6
+// ternary operator - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator  
+function positiveSum(arr) {
+    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+  }
