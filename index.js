@@ -33,3 +33,14 @@ function positiveSum(arr) {
     }
     return sum;
   }
+  
+// solution 4
+function positiveSum(arr) {
+    let sum = 0;
+    for(const number in arr){
+      if(arr[number] > 0){
+        sum += arr[number];
+      }
+    }
+    return sum;
+  }
