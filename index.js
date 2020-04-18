@@ -21,4 +21,15 @@ function positiveSum(arr){
     }
     return count;
   }
-  
+
+// solution 3
+function positiveSum(arr) {
+    let sum = 0;
+    for(const number of arr){
+    console.log(number)
+      if(number > 0){
+        sum += number;
+      }
+    }
+    return sum;
+  }
