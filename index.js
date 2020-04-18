@@ -33,7 +33,7 @@ function positiveSum(arr) {
     }
     return sum;
   }
-  
+
 // solution 4
 function positiveSum(arr) {
     let sum = 0;
@@ -44,3 +44,14 @@ function positiveSum(arr) {
     }
     return sum;
   }
+
+// solution 5
+// filter - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter 
+// reduce - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+// reduce - https://alligator.io/js/finally-understand-reduce/  
+function positiveSum(arr){
+    return arr
+          .filter(positivenumbers => positivenumbers > 0)
+          .reduce((a,b) => a + b, 0);
+    }
+    
